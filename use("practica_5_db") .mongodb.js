@@ -1,0 +1,12 @@
+use("practica_5_db")
+db.coleccion1.find({ campoB: { $gt: 100 } })          
+db.coleccion1.find({ tema: "tema1" })                
+db.coleccion1.find({ campoX: "valor1" })           
+db.coleccion1.find({ campoB: { $lt: 500 } })         
+db.coleccion1.find({ modificado: true })          
+db.coleccion1.find({ campoB: { $in: [123, 456, 789] } }) 
+db.coleccion1.find({ campoX: { $exists: true } })     
+db.coleccion1.find({ tema: { $regex: /^tema/ } })   
+db.coleccion1.find({})                               
+db.coleccion1.find().limit(5)                         
+

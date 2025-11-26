@@ -1,0 +1,6 @@
+use("practica_1_db")
+db.createCollection("coleccion1")
+db.createCollection("coleccion2")
+db.createCollection("coleccion3")
+db.createCollection("coleccion4")
+db.createCollection("coleccion5")
